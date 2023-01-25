@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    color: whitesmoke
+}
+header h1 {
+    font-size: 60px;
+}
+header a {
+    text-decoration: none;
+    font-size: 16px;
+    color: whitesmoke;
+}
+header a:hover{
+    background-color: black;
+}
+header img {
+    width: 80%;
+}
+nav {
+    height: 30px;
+}
+
+main{
+    background-color: rebeccapurple;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    color: sandybrown;
+    font-size: 25px;
+}
+.index-section{
+    width: 300px;
+}
+.index-p{
+    color: wheat;
+    background-color: brown;
+}
+.index-h3{
+    font-family: 'Courier New';
+    text-decoration: underline;
+}
+
+footer {
+    background-color: bisque;
+}
+img{
+    width: 100px;
+}
+.facebook {
+    height: 50px;
+}
+.instagram{
+    height: 150px;
+}
+
+#index-p{
+    font-size: 10px;
+}
