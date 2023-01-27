@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#5a79d2 ;
+    height:25vh ;
+}
+
+header a{
+    font-size: 135%;
+    color: rgb(207, 148, 81);
+    text-decoration: none;
+    display: inline-block;
+    margin: 16px;
+  }
+
+  header a:hover{
+    color: bisque;
+    text-shadow: 2px 2px rgb(207, 148, 81);
+    text-decoration: underline;
+  }
+
+section{
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+main{
+    background-color: aliceblue;
+    min-height: 80vh;
+}
+
+h1{
+    margin: 32px;
+    text-align: center;
+    color: #111d42;
+    font-size: 500%;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+p{
+    padding: 1rem;
+}
+.p-index-footer{
+    text-align: center;
+}
+.h5-index-footer{
+    color: burlywood;
+    text-decoration: underline burlywood;
+    text-align: center;
+    font-size: 200%;
+}
+
+footer{
+    padding-top: 32px;
+    background-color: #24244c;
+    min-height: 30vh;
+    color: aliceblue;
+}
+
+.homero{
+    width: 120px;
+    position: absolute;
+    top: 140px;
+    right: 350px;
+     /* valores predeterminados transform */
+     transition-duration:1s;
+     transition-timing-function:ease-in ;
+}
+
+.whatsapp{
+    width: 75px;
+    position: fixed;
+    bottom: 42px;
+    right: 42px;
+    /* valores predeterminados transform */
+    transition-duration:1s;
+    transition-timing-function:ease-in ;
+    /* valores predeterminados animaciones */
+    animation-name:caja;
+    animation-duration:2s ;
+    animation-iteration-count:1;
+}
+
+.whatsapp:hover{
+    transform: scale(1.2) rotate(-20deg);
+}
+
+.homero:hover{
+    transform: scale(3) rotate(360deg);
+}
+
+@keyframes caja{
+    0%{
+        right: -150px;
+    }
+    33%{
+        right:42px ;
+    }
+    66%{
+        right: -150px;
+    }
+    100%{
+        right:42px;
+    }
+}
