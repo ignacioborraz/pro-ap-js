@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+header {
+    width: 100%;
+    height: 200px;
+}
+header h1 {
+    font-size: 20px;
+    padding: 15px;
+    display: inline;
+    text-align: center;
+    position: absolute;
+    top: calc(200px - 25px);
+    right: 50px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(165, 25, 55)
+}
+header img {
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    min-height: calc(100vh - 200px);
+}
+.mascots-anchor {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(165, 25, 55)
+}
+.mascots-anchor:hover {
+    background-color: rgba(165, 25, 55, 0.2);
+}
+
+main {
+    width: calc(100% - 150px);
+    min-height: calc(100vh - 200px);
+    margin-left: 150px;
+    display: inline-block;
+    background-color: rgba(165, 25, 55, 0.6);
+}
+h2,h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    padding: 0 10px 10px 10px;
+}
+p {
+    font-size: 15px;
+    padding: 0 10px 10px 30px;
+}
+
+.title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascots-flex {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.self1 {
+    align-self: center;
+}
+
+.self2 {
+    align-self: flex-start;
+}
+
+.mascots-img {
+    width: 150px;
+    height: 150px;
+}
+
+.mascots-article {
+    display: flex;
+}
+
+.row {
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.column {
+    height: 700px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100px; /* al tener wrap no es necesario el min porque baja "solo" */
+}
+
+footer {
+    display: block;
+    background-color: rgb(165, 25, 55);
+}
+
+footer h2 {
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+}
+
+footer figure {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+}
+
+.facebook, .instagram {
+    height: 40px;
+    width: 40px;
+}
+
+#mascots-p {
+    display: inline-block;
+}

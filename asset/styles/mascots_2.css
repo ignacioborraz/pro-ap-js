@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+header {
+    width: 100%;
+    height: 200px;
+}
+header h1 {
+    font-size: 30px;
+    padding: 5px;
+    display: inline;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 175px);
+    color: rgb(240, 240, 240);
+}
+header img {
+    height: 100%;
+}
+
+.mascots-anchor {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(165, 25, 55)
+}
+.mascots-anchor:hover {
+    background-color: rgba(165, 25, 55, 0.2);
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    display: inline-block;
+    background-color: rgba(165, 25, 55, 0.6);
+}
+h2,h3{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    padding: 0 10px 10px 10px;
+}
+p {
+    font-size: 15px;
+    padding: 0 10px 10px 30px;
+}
+
+.mascots-img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+footer {
+    display: block;
+    background-color: rgb(165, 25, 55);
+}
+
+footer h2 {
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+}
+
+footer figure {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+}
+
+.facebook, .instagram {
+    height: 40px;
+    width: 40px;
+}
+
+#mascots-p {
+    display: inline-block;
+}
