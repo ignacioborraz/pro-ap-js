@@ -115,3 +115,36 @@ footer{
         right:42px;
     }
 }
+
+.otro-item {
+    list-style-type: armenian;
+}
+
+.espacio-entre-hermanos {
+    margin-top: 30px
+}
+
+.prueba-item {
+    list-style-type: square;
+    font-weight: 1000;
+}
+
+.tabla {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+}
+
+.altura-celda-img {
+    height: 500px;
+}
+
+.tamaño-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
