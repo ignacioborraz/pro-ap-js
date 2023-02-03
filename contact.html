@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/styles/contact.css">
     <title>Intro css</title>
 </head>
 <body>
     <header>
-        <h1 class="contact">Contact</h1>
+        <h1 class="contact-title">CONTACT</h1>
         <nav>
-            <a href="./index.html">Dog</a>
-            <a href="./about.html">Cat</a>
-            <a href="#">Contact</a>
-            <a href="./paginaposition.html">Position</a>
+            <a class="contact-anchor" href="./index.html">Dog</a>
+            <a class="contact-anchor" href="./paginaposition.html">L & T</a>
+            <a class="contact-anchor" href="./mascots.html">Mascots</a>
+            <a class="contact-anchor" href="#">Contact</a>
         </nav>
-        <img src="./asset/img/contact.png" alt="imageContact">
     </header>
     <main>
         <section>
-            <h2>Phone</h2>
-            <p>1234-5678</p>
-        </section>
-        <section>
-            <h2>Mail</h2>
-            <p>pet@gmail.com</p>
+            <form action="./asset/show_data.html" method="get">
+                <label>
+                    nombre
+                    <input type="text" placeholder="escribi el nombre de tu mascota" name="nombre" id="nombre_id">
+                </label>                
+                <label for="tiene_que_ser_igual_al_id">edad</label>
+                <input type="number" min="0" max="50" value="10" name="edad" id="tiene_que_ser_igual_al_id">
+                <!-- fecha -->
+                <label for="date">fecha</label>
+                <input type="date" name="fecha" id="date">
+                <!-- animal: con select -->
+                <select name="animal" id="animalito"> <!-- multiple como atributo para seleccionar varias con CTRL -->
+                    <option value="dog">perro</option>
+                    <option value="cat">gato</option>
+                    <option value="turtle">tortuga</option>
+                    <option value="parrot">loro</option>
+                    <option value="rabbit">conejo</option>
+                    <option value="monkey">mono</option>
+                </select>
+                <!-- comida con checks -->
+                <input type="checkbox" name="comida" id="zanahoria" value="carrot">
+                <label for="zanahoria">zanahoria</label>
+                <input type="checkbox" name="comida" id="tomate" value="tomato">
+                <label for="tomate">tomate</label>
+                <input type="checkbox" name="comida" id="banana" value="banana">
+                <label for="banana">banana</label>
+                <input type="checkbox" name="comida" id="lechuga" value="lettuce">
+                <label for="lechuga">lechuga</label>
+                <!-- suscripcion con radio -->
+                <label for="suscription_yes">suscribir</label>
+                <input type="radio" name="suscription" value="yes" id="suscription_yes">
+                <label for="suscription_no">no susscribir</label>
+                <input type="radio" name="suscription" value="no" id="suscription_no">
+                <label for="suscription_maybe">tal vez</label>
+                <input type="radio" name="suscription" value="maybe" id="suscription_maybe">
+                <input type="submit" value="enviar">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4815.494159097879!2d-64.49833198802975!3d-31.412236682090146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d673f7cfce6a3%3A0x84e88671664e74f7!2sLa%20Termi%20Ruin%20Bar%20-%20Villa%20Carlos%20Paz!5e0!3m2!1ses!2sar!4v1675463697595!5m2!1ses!2sar" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
-        <h2>Social</h2>
-        <figure>
-            <img src="./asset/img/logoFacebook.png" alt="logoFacebook">
-            <figcaption>Facebook</figcaption>
-        </figure>
-        <figure>
-            <img src="./asset/img/logoInstagram.png" alt="logoInstagram">
-            <figcaption>Instagram</figcaption>
-        </figure>
+        <h2>FE05</h2>
+        <p>No dudes en llamarnos!</p>
     </footer>
 </body>
 </html>
