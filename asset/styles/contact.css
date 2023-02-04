@@ -49,6 +49,50 @@ nav {
 main {
     min-height: calc(100vh - 50px - 150px);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    min-height: calc(100vh - 50px - 150px - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    margin: 20px 0;
+}
+
+.contact-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset, select {
+    width: 360px;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 4px;
+}
+
+.contact-input {
+    width: 180px;
+}
+
+.contact-label {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.contact-button {
+    width: 360px;
+    height: 28px;
+    display: flex;    
     justify-content: center;
     align-items: center;
 }
