@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro css</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/styles/about.css">
+    <title>Intro Bootstrap</title>
 </head>
-<body>
-    <header>
-        <h1 class="cat">Cat</h1>
-        <nav>
-            <a href="./index.html">Dog</a>
-            <a href="#">Cat</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./paginaposition.html">Position</a>
+<body class="w-100 vh-100 d-flex">
+    <header class="bg-warning d-flex flex-column h-100 ">
+        <h1 class="display-4 p-1 m-0 text-center">MINDY</h1>
+        <h2 class="p-1 m-0 text-center">PETSHOP</h2>
+        <nav class="d-flex flex-column align-items-center">
+            <a class="btn btn-danger w-75 m-1" href="./index.html">Box Model</a>
+            <a class="btn btn-danger w-75 mb-1" href="./paginaposition.html">T & L</a>
+            <a class="btn btn-danger w-75 mb-1" href="./contact.html">Contact</a>
+            <a class="btn btn-danger w-75 mb-1" href="#">About</a>
         </nav>
-        <img src="./asset/img/cat.png" alt="imageCat">
+        <img src="./asset/img/cat.png" alt="imageCat" class="about-img">
     </header>
-    <main>
-        <section>
-            <h3>Balanced Diet</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, tempore!</p>
+    <main class="about-main d-flex flex-column">
+        <section class="about-section flex-grow-1">
+            <h2 class="display-5 p-1 m-3 p-lg-3 m-lg-5 mt-lg-3 text-bg-secondary">ABOUT US</h3>
+            <h4 class="p-3">We are a family business that has been part of the pet business for 18 years.</h4>
+            <p class="p-3">Our main objective is to market quality products, committed to animals and the environment, we bring innovation and the latest trends in pet products and food.</p>
+            <span class="p-3">We want to give you a unique experience when you trust our store, we provide personalized attention and we provide an e-commerce experience with same-day shipping for a fast and safe purchase.</span>
         </section>
+        <footer class="d-flex p-1 m-3 p-lg-3 m-lg-5 mb-lg-3 text-bg-secondary">
+            <h2 class="display-5">SOCIAL</h2>
+            <article class="about-article d-flex ps-3">
+                <figure class="m-0 p-1 d-flex justify-content-center align-items-center"">
+                    <img src="./asset/img/logoFacebook.png" alt="logoFacebook" class="about-img-social">
+                    <figcaption class="p-1 d-none d-md-flex">Facebook</figcaption>
+                </figure>
+                <figure class="m-0 p-1 d-flex justify-content-center align-items-center"">
+                    <img src="./asset/img/logoInstagram.png" alt="logoInstagram" class="about-img-social">
+                    <figcaption class="p-1 d-none d-md-flex">Instagram</figcaption>
+                </figure>
+            </article>
+        </footer>
     </main>
-    <footer>
-        <h2>Social</h2>
-        <figure>
-            <img src="./asset/img/logoFacebook.png" alt="logoFacebook">
-            <figcaption>Facebook</figcaption>
-        </figure>
-        <figure>
-            <img src="./asset/img/logoInstagram.png" alt="logoInstagram">
-            <figcaption>Instagram</figcaption>
-        </figure>
-    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </html>
