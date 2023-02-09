@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+.about-img {
+    width: 200px;
+    object-fit: cover;
+    height: 100%
+}
+
+.about-img-social {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
