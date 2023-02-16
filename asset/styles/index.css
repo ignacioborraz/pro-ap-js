@@ -1,4 +1,15 @@
+.img-fit {
+    height: 200px;
+    object-fit: cover;
+}
+
 .red-fit {
     height: 50px;
     object-fit: cover;
+}
+
+.container-box {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
