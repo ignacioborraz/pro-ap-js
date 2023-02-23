@@ -51,20 +51,34 @@ let cardsDeAnimales = []
 let numero = 3
 let ancho = '20rem'
 for (let animal of animales) {
-    let card = `
-    <div class="card m-2" style="width: ${ancho};">
-        <img src="./asset/img/index/${animal.foto}" class="card-img-top img-fit" alt="${animal.nombre}">
-        <div class="card-body d-flex flex-column align-items-center">
-            <h${numero} class="card-title">${animal.nombre}</h${numero}>
-            <a href="#" class="btn btn-success">+info</a>
-        </div>
-    </div>
-    `
-    console.log(card)
-    cardsDeAnimales.push(card)
+    if (animal.nombre === 'perro' || animal.nombre === 'loro') { /* en amazing events tienen que buscar la condicion necesaria para el filtro por tiempo */
+        let card = `
+            <div class="card m-2" style="width: ${ancho};">
+                <img src="./asset/img/index/${animal.foto}" class="card-img-top img-fit" alt="${animal.nombre}">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h${numero} class="card-title">${animal.nombre}</h${numero}>
+                    <a href="#" class="btn btn-success">+info</a>
+                </div>
+            </div>
+        `
+        console.log(card)
+        cardsDeAnimales.push(card)
+    }
 }
-//console.log(cardsDeAnimales)
 
 /**
- * PROXIMO PASO: RENDERIZA EN EL NAVEGADOR EL CONTENIDO DINAMICO QUE GENERAMOS
+ * @printPets pinta en el DOM las cards
  */
+function printPets() {
+    let container1 = document.querySelector('#pet_container')  /* trae el elemento con ese id */
+    console.log(container1)
+    //let box1 = document.getElementById('pet_container') /* trae el elemento con ese id */
+    //let container2 = document.querySelector('.pet_container') /* trae la primer etiqueta con esa clase */
+    //let box2 = document.getElementsByClassName('pet_container') /* trae todas las etiquetas con esa clase */
+    //let container3 = document.querySelector('article') /* trae todos los article */
+    //let box3 = document.getElementsByTagName('article') /* trae todos los article */
+    container1.innerHTML = cardsDeAnimales.join('')
+    return 'se imprimió'
+}
+
+printPets()
