@@ -8,15 +8,6 @@ for (let i=0; i<numeros.length; i+=1) {
 }
 //console.log(numeros)
 
-let animales = [
-    {nombre: 'gato', foto: 'animal1.png'},
-    {nombre: 'perro', foto: 'animal2.png'},
-    {nombre: 'tortuga', foto: 'animal3.png'},
-    {nombre: 'conejo', foto: 'animal4.png'},
-    {nombre: 'loro', foto: 'animal5.png'},
-    {nombre: 'tiburón', foto: 'animal6.png'}
-]
-
 /**
  * @for_of para iterar un array
  * y armar un array de frases
@@ -52,18 +43,25 @@ let numero = 3
 let ancho = '20rem'
 for (let animal of animales) {
     if (animal.nombre === 'perro' || animal.nombre === 'loro') { /* en amazing events tienen que buscar la condicion necesaria para el filtro por tiempo */
-        let card = `
-            <div class="card m-2" style="width: ${ancho};">
-                <img src="./asset/img/index/${animal.foto}" class="card-img-top img-fit" alt="${animal.nombre}">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <h${numero} class="card-title">${animal.nombre}</h${numero}>
-                    <a href="#" class="btn btn-success">+info</a>
-                </div>
-            </div>
-        `
+        defineCard(ancho,animal,numero)
         console.log(card)
         cardsDeAnimales.push(card)
     }
+}
+
+/**
+ * @defineCard define el template de cada card dinamica
+ */
+function defineCard(ancho,animal,numero) {
+    return `
+    <div class="card m-2" style="width: ${ancho};">
+        <img src="./asset/img/index/${animal.foto}" class="card-img-top img-fit" alt="${animal.nombre}">
+        <div class="card-body d-flex flex-column align-items-center">
+            <h${numero} class="card-title">${animal.nombre}</h${numero}>
+            <a href="#" class="btn btn-success">+info</a>
+        </div>
+    </div>
+`
 }
 
 /**
