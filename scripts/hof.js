@@ -6,7 +6,6 @@ const soloNombres = (each) => each.nombre //el parámetro each corresponde a un 
 //console.log(animales.map(soloNombres))
 const nombreConParrafo = (each) => `<p>${each.nombre}</p>`
 //console.log(animales.map(nombreConParrafo))
-//console.log(animales.map(defineTemplate)) //funcion con el template ya definido
 //let frases = animales.map(each => `el animal ${each.nombre} tiene ${each.edad_actual} años`)
 //console.log(frases)
 //console.log(animales)
