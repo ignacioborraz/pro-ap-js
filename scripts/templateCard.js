@@ -22,7 +22,7 @@ function defineTemplate(animal) {
         <img src="./asset/img/index/${animal.foto}" class="card-img-top img-fit" alt="${animal.nombre}">
         <div class="card-body d-flex flex-column align-items-center">
             <h3 class="card-title">${animal.nombre}</h3>
-            <a href="./detail.html?nombre=${animal.nombre}" class="btn btn-success">+info</a>
+            <a href="./detail.html?patas=${animal.patas}&tipo=${animal.tipo}&nombre=${animal.nombre}" class="btn btn-success">+info</a>
         </div>
     </div>
 `

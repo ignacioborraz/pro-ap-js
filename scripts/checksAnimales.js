@@ -4,11 +4,11 @@ function printChecks(id_etiqueta,array_tipos) {
         return `
         <fieldset>
             <label class="contact-label" for="${each}">${each}</label>
-            <input onclick='captureData()' class="class_checks contact-input" type="checkbox" value="${each}" name="tipo" id="${each}">
+            <input onclick="captureData()" class="class_checks contact-input" type="checkbox" value="${each}" name="tipo" id="${each}">
         </fieldset>
         `
     })
-    array_tipos.push(`<input onkeyup='captureData()' id="id_search" class="contact-input" type="text" name="texto" placeholder="search">`)
+    array_tipos.push(`<input onkeyup="captureData()" id="id_search" class="contact-input" type="text" name="texto" placeholder="search">`)
     container.innerHTML = array_tipos.join('')
 }
 printChecks('#table_checks',tipos)
